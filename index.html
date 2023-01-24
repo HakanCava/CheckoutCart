@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShoppingCenter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="foto">
+          <img src="photo1.png" alt="" />
+        </div>
+        <div class="foto-price">
+          <h2>Vintage Backbag</h2>
+          <h3>$25.99 <del>34.99</del></h3>
+          <div class="count">
+            <button class="minus count-bag">-</button
+            ><span></span
+            ><button class="plus count-bag">+</button>
+          </div>
+          <button class="remove removeBag">Remove</button>
+          <div>
+            <p>Product Total:<span class="line-through"  id="bag-price">25.99</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="foto"><img src="photo2.png" alt="" /></div>
+        <div class="foto-price">
+          <h2>Levi Shoes</h2>
+          <h3>
+            $45.99 <span><del>54.99</del></span>
+          </h3>
+          <div class="count">
+            <button class="minus count-shoes">-</button
+            ><span></span
+            ><button class="plus count-shoes">+</button>
+          </div>
+          <button class="remove removeShoes">Remove</button>
+          <div>
+            <p>Product Total:<span class="line-through"  id="shoes-price">45.99</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="foto"><img src="photo3.jpg" alt="" /></div>
+        <div class="foto-price">
+          <h2>Antique Clock</h2>
+          <h3>
+            $74.99 <span><del>94.99</del></span>
+          </h3>
+          <div class="count">
+            <button class="minus count-clock">-</button
+            ><span></span
+            ><button class="plus count-clock">+</button>
+          </div>
+          <button class="remove removeClock">Remove</button>
+          <div>
+            <p>Product Total:<span class="line-through" id="clock-price">74.99</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-total">
+      <div class="cart">Cart: <i class="fa-solid fa-cart-shopping"></i></div>
+      <div class="total-prices">
+        <div class="total">
+          <p>Subtotal:</p>
+          <p class="dolar" id="subtotal">0</p>
+        </div>
+        <div class="total">
+          <p>Tax(%18):</p>
+          <p class="dolar" id="tax">0</p>
+        </div>
+        <div class="total">
+          <p>Shipping:</p>
+          <p class="dolar" id="shipping">0</p>
+        </div>
+        <div class="total">
+          <p>Total:</p>
+          <p class="dolar" id="sum">0</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
