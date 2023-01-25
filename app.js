@@ -62,15 +62,12 @@ function removeFunc(e) {
   if (e.target.classList.contains("removeBag")) {
     e.target.parentElement.parentElement.remove();
     bagP = 0;
-    shipping.innerText -= 5;
   } else if (e.target.classList.contains("removeShoes")) {
     e.target.parentElement.parentElement.remove();
     shoesP= 0;
-    shipping.innerText -= 5;
   } else if (e.target.classList.contains("removeClock")) {
     e.target.parentElement.parentElement.remove();
     clockP = 0;
-    shipping.innerText -= 5;
   }
 }
 
